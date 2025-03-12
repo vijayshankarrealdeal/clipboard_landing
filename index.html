@@ -63,7 +63,7 @@
       text-align: center;
     }
     
-    .download-footer a {
+    .download-footer a.download-btn {
       background: #27e6a1;
       color: #1e1e2e;
       font-size: 1.2rem;
@@ -75,9 +75,19 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     
-    .download-footer a:hover {
+    .download-footer a.download-btn:hover {
       background: #1db788;
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .download-footer p {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    
+    .download-footer a.git-link {
+      color: #27e6a1;
+      text-decoration: underline;
     }
     
     /* Features Sidebar on Right */
@@ -149,7 +159,7 @@
       .features-sidebar li {
         font-size: 0.9rem;
       }
-      .download-footer a {
+      .download-footer a.download-btn {
         font-size: 1rem;
         padding: 10px 20px;
       }
@@ -181,9 +191,10 @@
     </ul>
   </div>
   
-  <!-- Download Button at Bottom Center -->
+  <!-- Download Button and GitHub Link at Bottom Center -->
   <div class="download-footer">
-    <a href="https://github.com/vijayshankarrealdeal/Clipboard/raw/refs/heads/main/Clipboard.zip" download>Download Now</a>
+    <a class="download-btn" href="https://github.com/vijayshankarrealdeal/Clipboard/raw/refs/heads/main/Clipboard.zip" download>Download Now</a>
+    <p>For more information, visit our <a class="git-link" href="https://github.com/vijayshankarrealdeal/Clipboard/" target="_blank">GitHub repository</a>.</p>
   </div>
 </body>
 </html>
